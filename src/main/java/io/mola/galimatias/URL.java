@@ -532,7 +532,7 @@ public class URL implements Serializable {
     }
 
     public URL withQuery(final String newQuery) throws GalimatiasParseException {
-        if (this.query == newQuery) {
+        if (this.query.equals(newQuery)) {
             return this;
         }
         if (this.query != null && this.query.equals(newQuery)) {
