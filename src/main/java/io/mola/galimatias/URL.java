@@ -552,7 +552,7 @@ public class URL implements Serializable {
         //if ("javascript".equals(scheme)) {
         //    throw new GalimatiasParseException("Cannot set fragment on 'javascript:' URL");
         //}
-        if (this.fragment == newFragment) {
+        if (this.fragment.equals(newFragment)) {
             return this;
         }
         if (this.fragment != null && this.fragment.equals(newFragment)) {
